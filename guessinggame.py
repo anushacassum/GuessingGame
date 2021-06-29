@@ -9,7 +9,7 @@ while number != guess:
     guess = int(input("Enter an integer from 0 to 10: "))
     numofguesses = numofguesses + 1
     if numofguesses == 4:
-        hint = int(input(print ("Do you want a hint? Type y or n: "))
+        hint = input("Do you want a hint? Type y or n: ")
         if hint == "y":
             if number>5:
                 print("The number is greater than 5")
@@ -23,4 +23,3 @@ while number != guess:
 
 if number == guess :
     print("Congratulations! You guessed the number in ", numofguesses, "number of tries")
-        
