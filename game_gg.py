@@ -33,22 +33,10 @@ b=1
 while b<9:
     if a==n:
        print("Congratulations. You guessed the right number in", b, "guess(es).")
-       if b==1:
-           print("Your score is 15 points")
-       if b==2:
-           print("Your score is 13 points")
-       if b==3:
-           print("Your score is 11 points")
-       if b==4:
-           print("Your score is 9 points")
-       if b==5:
-           print("Your score is 7 points")
-       if b==6:
-           print("Your score is 5 points")
-       if b==7:
-           print("Your score is 3 points")
-       if b==8:
-           print("Your score is 1 point")
+       _map = { 1: "15", 2: "13",3: "11", 4: "9", 5: "7", 6: "5", 7: "3", 8:"1"}
+
+       
+       print ("Your score is " + _map.get(b) + " points")
        b=10
     elif b<8:
        b+=1
